@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Reglas CSS">
+    <meta name="description" content="Ejercicio 2 reglas css">
+    <title>Ejercicio reglas CSS</title>
+<style type="text/css">
+    /*Aqui comienta el reset Css*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table{border-collapse: collapse; border-spacing: 0; }
+td, th, caption, {font-weight: normal; text-align: left; }
+img, fieldset{ border: 0; }
+ol {padding-left: 1.4em; list-style: decimal; }
+ul {padding-left: 1.4em; list-style: square; }
+q:before, q:after {content:'';
+ }
+ /*Hasta Aqui el reset Css*/
+    table, tr, th, td {border:1px solid #000; border-collapse:collapse; padding:5px;}
+    body{font:1em/1.3 Arial, Helvetica, sans-serif;background: white;margin: 20px 10px;padding: 5px;}/*estilo al body*/
+    h1#titulo{font:2em cursive;color:#e60e6c;padding: 5px 10px 15px 5px;} /*regla del h1 titulo*/
+    strong{color:brown;}
+    span.destacado{color:#f593ed;}/*regla de class*/
+    h2#subtitulo{font:1.5em cursive;color:#e60e6c;padding: 5px 10px 15px 5px;}
+    a{color:crimson;}
+    a em{color:deeppink;}
+    caption{font:1,5em cursive;color:#660437;margin:5px;padding: 10px;}
+    span.especial{color:tomato;}
+    section#adicional p{margin:20px 10px;padding:5px;}
+    h1#title{font:2em cursive;color:#e60e6c;margin:5px;padding: 5px 10px 15px 5px;}
+    section#adicional span#especial{color:red;}
+     section#adicional a{color: darkgreen};
+    section span{color:blue};
+ 
+    
+   
+    
+    
+    
+    
+</style>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Roraima (tepuy)</h1>
+    </header>
+    <main>
+       <section>
+           <p>
+               <strong>El monte Roraima</strong>, también conocido como tepuy Roraima, cerro Roraima o simplemente Roraima, con 2810 msnm, es el punto más alto de la cadena de mesetas tepuyes (montañas tabulares) de la sierra de Pacaraima, en América del Sur. Descrito por primera vez por el explorador inglés Sir Walter Raleigh en 1596, <span class="destacado">sus 31 km² de área en la cima están divididos entre Venezuela (80 %), Guyana (15%) y Brasil (5 %) con acantilados de 400 metros de altura por todos sus lados</span>.
+           </p><br>
+           <h2 id="subtitulo">Generalidades</h2>
+           <p>
+               El Roraima es una meseta de arenisca que sobresale más de mil metros sobre las <a href="">sabanas <em>boscosas</em></a> circundantes. Está ubicada en el extremo sudeste del <span class="especial">Parque nacional Canaima</span> y se extiende por unos 30 000 km². Es uno de los lugares de más antigua geología del planeta, remontándose hasta el Precámbrico, unos dos mil millones de años atrás.
+           </p>
+           <table>
+              <caption>Diversidad biológica</caption>        
+              <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>                  
+              </tr>
+              <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Flores</th>
+                  <th scope="col">Arbustos</th>                  
+              </tr>
+              <tr>
+                  <th scope="row" class="especial">Nombre cientifico</th>
+                  <td>Fauna</td>
+                  <td><em>flora</em></td>
+              </tr>
+              <tr>
+                  <th scope="row">Tipo</th>
+                  <td>Epidendrum Secundum<strong>(orquidea)</strong></td>
+                  <td>Cattleya Roraimae (orquidea)</td>                  
+              </tr>             
+           </table>
+       </section>
+       <section id="adicional">
+         <h1 id="title">Puntos de interés</h1>
+          <p>
+              <strong>Paraitepuy:</strong> población a 50 km aproximadamente de la carretera principal, último lugar hasta donde tienen acceso los vehículos y punto de partida de la excursión al monte Roraima. Aquí se encuentran las oficinas de INPARQUES en la cual hay que registrarse y en donde se pueden contratar los guías y porteadores.
+          </p>
+          <p>
+              <span id="especial">Campamento Tek (Tök):</span> primer campamento a orillas del río Tek, está ubicado aproximadamente a 4 h de Paraitepuy, es donde generalmente se pasa la primera noche.
+          </p>
+          <p>
+              <a href="#">Campamento Kukenan:</a> segundo campamento a orillas del río Kukenan, a aproximadamente una hora del Campamento Tek, es una alternativa para pasar la primera noche. De optar por este campamento, tiene la ventaja de que al final de la caminata del primer día se pasan entonces los ríos Tek y Kukenan, así en caso de crecida eventuales a finales del día o en la noche de los ríos, ya estos se pasaron, también de que en caso de el excursionista se caiga al intentar pasar los ríos o de mojarse, da tiempo suficiente para secarse mientras se acampa; además de que el primer de caminata es más suave (menos pendiente) y así es mejor caminarla el primer día en vez del segundo, para balancear la dificultad de los días de caminatas; aunque por otro lado, este campamento tiene menos brisa y por ende más plaga (puri-puris) y también es menos vistoso.
+          </p>
+          <p>
+             <strong>Campamento Base:</strong> tercer campamento antes de iniciar el ascenso, es donde generalmente se pasa la segunda noche, la gente descansa y se prepara para subir por la "rampa" del Roraima.
+          </p>
+           
+       </section>
+        
+        
+        
+        
+        
+        
+    </main>
+    <footer>©Copyright 2019 Mayerly Pirela</footer>
+</body>
+</html>
