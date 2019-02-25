@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* Documento Css */
+/*Aqui comienta el reset Css*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table{border-collapse: collapse; border-spacing: 0; }
+td, th, caption, {font-weight: normal; text-align: left; }
+img, fieldset{ border: 0; }
+ol {padding-left: 1.4em; list-style: decimal; }
+ul {padding-left: 1.4em; list-style: square; }
+q:before, q:after {content:'';
+ }
+ /*Hasta Aqui el reset Css*/
+/*-- Básico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: 0 auto;
+}
+
+#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+  border: 2px solid #777;
+}
+
+#cabecera { clear: both; }
+#menu { clear: both; }
+#lateral { float: left; width: 20%; }
+#contenido { float: right; width: 78%; }
+#contenido #principal { float: left; width: 78%; }
+#contenido #secundario { float: right; width: 20%; }
+#pie { clear: both; }
+
+/*-- Cabecera --------------------------------------------------------*/
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+
+/*-- Menu ------------------------------------------------------------*/
+#menu ul#menu_principal li { display: inline; float: left; }
+
+/*-- Sección Principal -----------------------------------------------*/
+#contenido #principal .articulo img { width: 100px; float: left; }
+
+/*-- Pie de página ---------------------------------------------------*/
+#pie .enlaces   { float: left; }
+#pie .copyright { float: right; }
+
+#cabecera,
+#menu,
+#lateral,
+#lateral #lateral,
+#contenido,
+#contenido #principal,
+#contenido #secundario,
+#pie {
+    padding: .5em;
+    border: none;
+}
+
+#lateral {
+    padding: 0;
+}
+
+#cabecera {
+    padding: 1em;
+    }
+#cabecera h1{
+    background: url(../imagenes/logo.png) no-repeat -60px -15px;
+}
+#cabecera h1 span {
+  visibility: hidden;
+}
+
+#menu {
+    margin-bottom: .5em;
+    border-bottom: 1px solid #1136ba;
+    background: url(../imagenes/fondo_menu.png);
+}
+
+#lateral #noticias {
+    border: 1px solid #9a9dac;
+    background: #e5e5e5;
+}
+
+#lateral #publicidad {
+    margin-top: 1em;
+    border: 1px solid #292a32;
+}
+
+#contenido #secundario {
+    border: 1px solid #09198f;
+}
+
+#contenido {
+    width: 77%;
+    padding: 0;
+}
+
+#contenido #principal {
+    width: 73%;
+}
+
+#pie {
+    padding: .5em 0;
+    margin-top: 1em;
+    border-bottom: 1px solid #1a30d5;
+    border-top: 1px solid #6874ce;
+    background: #e5e5e5;
+}
+
+#contenido #principal .articulo {
+    margin-bottom: 1em;
+}
+
+#contenido #principal .articulo img {
+    margin: .5em;
+}
+
+#lateral #publicidad {
+    margin-top: 1em;
+}
